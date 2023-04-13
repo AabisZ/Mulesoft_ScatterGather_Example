@@ -24,7 +24,7 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 	</flow>
 	<flow name="scatter-gather-exampleFlow1" doc:id="087c280f-4c0e-4581-b25e-648cdb15ef21" >
 		<http:listener doc:name="Listener" doc:id="a21262e8-ca2a-40d6-acae-43c6306b3c0a" path="/primary" config-ref="HTTP_Listener_config"/>
-		<set-payload value="#['success']" doc:name="Set Payload" doc:id="f56fd26a-7e8f-446b-b6c2-5273b805385a" />
+		<set-payload value="#['successful']" doc:name="Set Payload" doc:id="f56fd26a-7e8f-446b-b6c2-5273b805385a" />
 	</flow>
 	<flow name="scatter-gather-exampleFlow2" doc:id="2571a2c2-9db6-4cff-b90d-6df2c70b144f" >
 		<http:listener doc:name="Listener" doc:id="eab369f0-dd46-46c4-8960-53c69f6f66c0" path="/secondary" config-ref="HTTP_Listener_config"/>
